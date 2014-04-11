@@ -1,0 +1,3 @@
+diff zuzulog zuzulogbackup | grep -v TIME
+diff zuzuout zuzuoutbackup | grep -v TIME
+

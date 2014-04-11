@@ -1,0 +1,53 @@
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Thu Mar 13 15:24:02 2014
+TIME beginning             0.00 u         0.00 s   Res:      569344
+TIME beginning             0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+Main: Beginning execution
+Main: infile 'zin1.txt'
+Main: outfile 'zuzuout'
+Main: logfile 'zuzulog'
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->   0)
+UnionFind: 
+(  0 ->   0)
+(  1 ->   0)(  0 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->   0)
+UnionFind: 
+(  0 ->   0)
+(  1 ->   0)(  0 ->   0)
+(  2 ->   0)(  0 ->   0)
+
+UnionFind: FOUNDCYCLE IN ADDING ARC(  2 ->   1)
+UnionFind: PATH ONE (  2 ->   1)(  1 ->   0)
+UnionFind: PATH TWO (  2 ->   0)
+
+
+UnionFind: 
+(  0 ->   0)
+(  1 ->   0)(  0 ->   0)
+(  2 ->   0)(  0 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  3 ->   2)
+UnionFind: 
+(  0 ->   0)
+(  1 ->   0)(  0 ->   0)
+(  2 ->   0)(  0 ->   0)
+(  3 ->   2)(  2 ->   0)(  0 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->   3)
+UnionFind: 
+(  0 ->   0)
+(  1 ->   0)(  0 ->   0)
+(  2 ->   0)(  0 ->   0)
+(  3 ->   2)(  2 ->   0)(  0 ->   0)
+(  4 ->   3)(  3 ->   2)(  2 ->   0)(  0 ->   0)
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Thu Mar 13 15:24:02 2014
+TIME ending                0.00 u         0.00 s   Res:      634880
+TIME ending                0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+Main: Ending execution

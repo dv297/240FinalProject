@@ -1,0 +1,13 @@
+#!/bin/bash
+cd testdirectory
+#
+for item in *
+do
+  echo " "
+  echo "EXECUTING" $item
+  cd $item
+  Aprog <../../zin.txt >zzzout
+  cd ..
+echo "EXECUTION COMPLETE"
+done
+echo " "

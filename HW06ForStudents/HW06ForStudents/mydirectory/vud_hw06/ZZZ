@@ -1,0 +1,3 @@
+#!/bin/bash
+make
+Aprog zin4.txt 111out 111log

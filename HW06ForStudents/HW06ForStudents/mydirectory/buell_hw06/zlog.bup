@@ -1,0 +1,1127 @@
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Wed Jul 17 23:26:27 2013
+TIME beginning             0.00 u         0.00 s
+TIME beginning             0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+Main: Beginning execution
+Main: dictionary  'dictionary.txt'
+Main: outfile 'zout'
+Main: logfile 'zlog'
+7 9
+13 18
+10 12
+4 18
+3 9
+0 5
+12 2
+7 3
+7 9
+0 12
+3 9
+9 17
+0 13
+19 18
+16 15
+17 6
+12 7
+10 13
+19 9
+19 1
+    7     9
+   13    18
+   10    12
+    4    18
+    3     9
+    0     5
+    2    12
+    3     7
+    7     9
+    0    12
+    3     9
+    9    17
+    0    13
+   18    19
+   15    16
+    6    17
+    7    12
+   10    13
+    9    19
+    1    19
+
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    9
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   12
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   18
+UnionFind:    19 ->   19
+
+UnionFind: process link     7     9
+UnionFind: find root of 7
+UnionFind: root is 7
+UnionFind: find root of 9
+UnionFind: root is 9
+UnionFind: roots     7     9
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   12
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   18
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   12
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   18
+UnionFind:    19 ->   19
+
+UnionFind: process link    13    18
+UnionFind: find root of 13
+UnionFind: root is 13
+UnionFind: find root of 18
+UnionFind: root is 18
+UnionFind: roots    13    18
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   12
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   13 ->   13
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   12
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   13 ->   13
+UnionFind:    19 ->   19
+
+UnionFind: process link    10    12
+UnionFind: find root of 10
+UnionFind: root is 10
+UnionFind: find root of 12
+UnionFind: root is 12
+UnionFind: roots    10    12
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   13 ->   13
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   13
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->   13 ->   13
+UnionFind:    19 ->   19
+
+UnionFind: process link     4    18
+UnionFind: find root of 4
+UnionFind: root is 4
+UnionFind: find root of 18
+UnionFind: parent is 13
+UnionFind: root is 13
+UnionFind: roots     4    13
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    7
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->    7
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     3     9
+UnionFind: find root of 3
+UnionFind: root is 3
+UnionFind: find root of 9
+UnionFind: parent is 7
+UnionFind: root is 7
+UnionFind: roots     3     7
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    5
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     0     5
+UnionFind: find root of 0
+UnionFind: root is 0
+UnionFind: find root of 5
+UnionFind: root is 5
+UnionFind: roots     0     5
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   10
+UnionFind:    11 ->   11
+UnionFind:    12 ->   10 ->   10
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     2    12
+UnionFind: find root of 2
+UnionFind: root is 2
+UnionFind: find root of 12
+UnionFind: parent is 10
+UnionFind: root is 10
+UnionFind: roots     2    10
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     3     7
+UnionFind: find root of 3
+UnionFind: root is 3
+UnionFind: find root of 7
+UnionFind: parent is 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: roots     3     3
+UnionFind: link forms cycle 
+UnionFind: cycle 3 7
+UnionFind: cycle 7 9
+UnionFind: cycle 9 3
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     7     9
+UnionFind: find root of 7
+UnionFind: parent is 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: find root of 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: roots     3     3
+UnionFind: link forms cycle 
+UnionFind: cycle 7 9
+UnionFind: cycle 7 9
+UnionFind: cycle 9 3
+UnionFind: cycle 9 3
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->    2
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    2 ->    2
+UnionFind:    11 ->   11
+UnionFind:    12 ->    2 ->    2
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     0    12
+UnionFind: find root of 0
+UnionFind: root is 0
+UnionFind: find root of 12
+UnionFind: parent is 2
+UnionFind: root is 2
+UnionFind: roots     0     2
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     3     9
+UnionFind: find root of 3
+UnionFind: root is 3
+UnionFind: find root of 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: roots     3     3
+UnionFind: link forms cycle 
+UnionFind: cycle 3 9
+UnionFind: cycle 9 3
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->   17
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     9    17
+UnionFind: find root of 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: find root of 17
+UnionFind: root is 17
+UnionFind: roots     3    17
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->    4
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->   18 ->    4 ->    4
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->    4 ->    4
+UnionFind:    19 ->   19
+
+UnionFind: process link     0    13
+UnionFind: find root of 0
+UnionFind: root is 0
+UnionFind: find root of 13
+UnionFind: parent is 18
+UnionFind: parent is 4
+UnionFind: root is 4
+UnionFind: roots     0     4
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   19
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   19
+
+UnionFind: process link    18    19
+UnionFind: find root of 18
+UnionFind: parent is 13
+UnionFind: parent is 0
+UnionFind: root is 0
+UnionFind: find root of 19
+UnionFind: root is 19
+UnionFind: roots     0    19
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   16
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind: process link    15    16
+UnionFind: find root of 15
+UnionFind: root is 15
+UnionFind: find root of 16
+UnionFind: root is 16
+UnionFind: roots    15    16
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    3
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->    3 ->    3
+UnionFind:     8 ->    8
+UnionFind:     9 ->    3 ->    3
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    9 ->    3 ->    3
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind: process link     6    17
+UnionFind: find root of 6
+UnionFind: root is 6
+UnionFind: find root of 17
+UnionFind: parent is 9
+UnionFind: parent is 3
+UnionFind: root is 3
+UnionFind: roots     6     3
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind:     0 ->    0
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->    0
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->    0
+UnionFind:     5 ->    0 ->    0
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    0 ->    0
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->    0
+UnionFind:    13 ->    0 ->    0
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->    0
+UnionFind:    19 ->   18 ->   13 ->    0 ->    0
+
+UnionFind: process link     7    12
+UnionFind: find root of 7
+UnionFind: parent is 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: find root of 12
+UnionFind: parent is 0
+UnionFind: root is 0
+UnionFind: roots     6     0
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind: process link    10    13
+UnionFind: find root of 10
+UnionFind: parent is 12
+UnionFind: parent is 7
+UnionFind: parent is 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: find root of 13
+UnionFind: parent is 0
+UnionFind: parent is 12
+UnionFind: parent is 7
+UnionFind: parent is 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: roots     6     6
+UnionFind: link forms cycle 
+UnionFind: cycle 10 13
+UnionFind: cycle 10 12
+UnionFind: cycle 12 7
+UnionFind: cycle 7 9
+UnionFind: cycle 9 17
+UnionFind: cycle 17 6
+UnionFind: cycle 13 0
+UnionFind: cycle 0 12
+UnionFind: cycle 12 7
+UnionFind: cycle 7 9
+UnionFind: cycle 9 17
+UnionFind: cycle 17 6
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind: process link     9    19
+UnionFind: find root of 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: find root of 19
+UnionFind: parent is 18
+UnionFind: parent is 13
+UnionFind: parent is 0
+UnionFind: parent is 12
+UnionFind: parent is 7
+UnionFind: parent is 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: roots     6     6
+UnionFind: link forms cycle 
+UnionFind: cycle 9 19
+UnionFind: cycle 9 17
+UnionFind: cycle 17 6
+UnionFind: cycle 19 18
+UnionFind: cycle 18 13
+UnionFind: cycle 13 0
+UnionFind: cycle 0 12
+UnionFind: cycle 12 7
+UnionFind: cycle 7 9
+UnionFind: cycle 9 17
+UnionFind: cycle 17 6
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind:     0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     3 ->    9 ->   17 ->    6 ->    6
+UnionFind:     4 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     5 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     6 ->    6
+UnionFind:     7 ->    9 ->   17 ->    6 ->    6
+UnionFind:     8 ->    8
+UnionFind:     9 ->   17 ->    6 ->    6
+UnionFind:    10 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    11 ->   11
+UnionFind:    12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    6 ->    6
+UnionFind:    18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+UnionFind:    19 ->   18 ->   13 ->    0 ->   12 ->    7 ->    9 ->   17 ->    6 ->    6
+
+UnionFind: process link     1    19
+UnionFind: find root of 1
+UnionFind: root is 1
+UnionFind: find root of 19
+UnionFind: parent is 18
+UnionFind: parent is 13
+UnionFind: parent is 0
+UnionFind: parent is 12
+UnionFind: parent is 7
+UnionFind: parent is 9
+UnionFind: parent is 17
+UnionFind: parent is 6
+UnionFind: root is 6
+UnionFind: roots     1     6
+UnionFind:     0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     1 ->    1
+UnionFind:     2 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     3 ->    9 ->    7 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     4 ->   18 ->   19 ->    1 ->    1
+UnionFind:     5 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     6 ->   17 ->    9 ->    7 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     7 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:     8 ->    8
+UnionFind:     9 ->    7 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:    10 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:    11 ->   11
+UnionFind:    12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:    13 ->   18 ->   19 ->    1 ->    1
+UnionFind:    14 ->   14
+UnionFind:    15 ->   15
+UnionFind:    16 ->   15 ->   15
+UnionFind:    17 ->    9 ->    7 ->   12 ->    0 ->   13 ->   18 ->   19 ->    1 ->    1
+UnionFind:    18 ->   19 ->    1 ->    1
+UnionFind:    19 ->    1 ->    1
+
+    7     9
+   13    18
+   10    12
+    4    18
+    3     9
+    0     5
+    2    12
+    3     7
+    7     9
+    0    12
+    3     9
+    9    17
+    0    13
+   18    19
+   15    16
+    6    17
+    7    12
+   10    13
+    9    19
+    1    19
+
+  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+ 13  1 12  9 18  0 17 12  8  7 12 11  0 18 14 15 15  9 19  1
+
