@@ -80,6 +80,11 @@ int main(int argc, char *argv[])
 
   outStream << unionFind.toString() << endl;
   outStream.flush();
+  
+  unionFind.buildTrees();
+  Utils::logStream << unionFind.toString() << endl;
+  Utils::logStream.flush();
+
 
   timeCallOutput = Utils::timecall("ending");
   Utils::logStream << timeCallOutput;

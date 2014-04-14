@@ -17,8 +17,9 @@ public:
 
   void addLink(int a, int b);
   void dumpTrees();
-  Node find(int thatX);
-  Node find(int thatX, vector<Node>& nodePath);
+  void buildTrees();
+  Node find(int value);
+  Node find(int value, vector<Node>& nodePath);
 
   string toString();
 
@@ -26,8 +27,8 @@ private:
   vector<std::pair<int, int> > links;
   map<int, Node> nodes;
 
-  string frabjous(int xx, int yy);
-  string toStringPath(vector<Node> path, Node last);
+  string frabjous(int smaller, int larger);
+  string toStringPath(vector<Node> path, Node bottom);
 };
 
 #endif // UNIONFIND_H
