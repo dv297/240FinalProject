@@ -82,8 +82,9 @@ int main(int argc, char *argv[])
   outStream.flush();
   
   unionFind.buildTrees();
-  Utils::logStream << unionFind.toString() << endl;
-  Utils::logStream.flush();
+  // Next two lines are commented out to match zzlog3.txt
+  //Utils::logStream << unionFind.toString() << endl;
+  //Utils::logStream.flush();
 
 
   timeCallOutput = Utils::timecall("ending");

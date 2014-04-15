@@ -5,6 +5,10 @@ static const string TAG = "Node: ";
 /********************************************************************
  * DUMMYX is defined as -1
  * DUMMYY is defined as
+ * 
+ * 4-15-14
+ *   - We probably need to think about how we define currentValue
+       vs nextValue in terms of parent vs child.
  **/
 Node::Node()
 {
@@ -75,11 +79,15 @@ bool Node::equals(Node that)
 
 /********************************************************************
  * 4-7-14
- *   - It appears that this function is returning a boolean.
- - Line is originally shown as "   return (this-x = this->y)   "
- - Changed to double equals
+ *  - It appears that this function is returning a boolean.
+ *  - Line is originally shown as "   return (this-x = this->y)   "
+ *  - Changed to double equals
+ * 4-15-14
+ *  - Buell explained that the top of the tree is identified 
+ *    when currentValue == nextValue
+ *  - As of now, this isn't used for some reason, we should check
  **/
-bool Node::z()
+bool Node::atTop()
 {
   return (this->currentValue == this->nextValue);
 }

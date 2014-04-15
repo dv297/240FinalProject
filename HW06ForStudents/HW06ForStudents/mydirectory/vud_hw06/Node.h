@@ -20,7 +20,7 @@ public:
   void setNextValue(int value);
 
   bool equals(Node that);
-  bool z();
+  bool atTop();
 
   string toString();
 
