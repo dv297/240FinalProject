@@ -1,6 +1,6 @@
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Apr 16 22:06:52 2014
+TIME CPU percent    0.00   0.00                    Wed Apr 16 22:31:56 2014
 TIME beginning             0.00 u         0.00 s   Res:         872
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
@@ -11,23 +11,35 @@ Main: infile 'zin1.txt'
 Main: outfile '111out'
 Main: logfile '111log'
 UnionFind: BUILD TREE BY ADDING ARC(  1 ->   0)
+UnionFind: PATH ONE (  1 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  1 ->   0)(  0 ->   0)
+
 
 UnionFind: 
 (  0 ->   0)
 (  1 ->   0)(  0 ->   0)
 UnionFind: BUILD TREE BY ADDING ARC(  2 ->   0)
+UnionFind: PATH ONE (  2 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  2 ->   0)(  0 ->   0)
+
 
 UnionFind: 
 (  0 ->   0)
 (  1 ->   0)(  0 ->   0)
 (  2 ->   0)(  0 ->   0)
 UnionFind: BUILD TREE BY ADDING ARC(  2 ->   1)
+UnionFind: PATH ONE (  2 ->   1)(  1 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  2 ->   0)(  0 ->   0)
+
 
 UnionFind: 
 (  0 ->   0)
 (  1 ->   0)(  0 ->   0)
 (  2 ->   0)(  0 ->   0)
 UnionFind: BUILD TREE BY ADDING ARC(  3 ->   2)
+UnionFind: PATH ONE (  3 ->   2)(  2 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  3 ->   2)(  2 ->   0)(  0 ->   0)
+
 
 UnionFind: 
 (  0 ->   0)
@@ -35,6 +47,9 @@ UnionFind:
 (  2 ->   0)(  0 ->   0)
 (  3 ->   2)(  2 ->   0)(  0 ->   0)
 UnionFind: BUILD TREE BY ADDING ARC(  4 ->   3)
+UnionFind: PATH ONE (  4 ->   3)(  3 ->   2)(  2 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  4 ->   3)(  3 ->   2)(  2 ->   0)(  0 ->   0)
+
 
 UnionFind: 
 (  0 ->   0)
@@ -44,7 +59,7 @@ UnionFind:
 (  4 ->   3)(  3 ->   2)(  2 ->   0)(  0 ->   0)
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Apr 16 22:06:52 2014
+TIME CPU percent    0.00   0.00                    Wed Apr 16 22:31:56 2014
 TIME ending                0.00 u         0.00 s   Res:        1096
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************

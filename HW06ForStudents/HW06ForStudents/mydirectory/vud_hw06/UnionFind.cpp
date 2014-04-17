@@ -226,17 +226,32 @@ string UnionFind::toStringPath(vector<Node> path, Node bottom)
 bool UnionFind::checkPathsEqual(vector<Node> path1, vector<Node> path2)
 {
    bool result = true;
-   vector<Node>:: iterator it1;
-   vector<Node>:: iterator it2;
-   for(it1 = path1.begin(); it1!= path1.end(); ++it1)
+   vector<Node>::iterator it1;
+   vector<Node>::iterator it2;
+   
+   it1 = path1.begin();
+   it2 = path2.begin();
+   int i = 0;
+   if(path1.size() != path2.size())
    {
-      for(it2 = path2.begin(); it2 !=path2.end(); ++it2)
+      cout << "VARIATION 1" << endl;
+      result = false;
+   }
+   while(it1 != path1.end() && it2 != path2.end())
+   {
+      if(!((*it1).equals((*it2))))
       {
-         if(!(*it1).equals((*it2)))
-         {
-             result = false;
-         }
+        cout << "VARTIATION 2" << endl;
+        result = false;
       }
+      ++it1;
+      ++it2;
+      ++i;
+   }
+   if(result)
+   {
+      cout << "VARIATION 3" << endl;
    }
    return result;
 }
+
