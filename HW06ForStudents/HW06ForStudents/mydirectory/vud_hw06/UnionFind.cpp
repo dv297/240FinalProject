@@ -156,8 +156,8 @@ string UnionFind::dumpPaths(int parent, int current)
   vector<Node> pathParent;
   vector<Node> pathCurrent;
   
-  currentValue = this->find(parent, pathParent);
-  parentValue = this->find(current, pathCurrent);
+  parentValue = this->find(parent, pathParent); // As of 4-16, this was backwards, changed 4-17
+  currentValue = this->find(current, pathCurrent);
   
   vector<Node>::iterator itSmaller = pathParent.end();
   vector<Node>::iterator itLarger = pathCurrent.end();
@@ -174,15 +174,15 @@ string UnionFind::dumpPaths(int parent, int current)
   
   tempNode.setCurrentValue(current);
   tempNode.setParentValue(parent);
- 
-  if(!checkPathsEqual(pathParent, pathCurrent))
-  { 
-     Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathParent, *itSmaller) << endl;
+
+
+  if(pathCurrent[0].getParentValue() !=( tempNode.getParentValue() ))
+  {
+     Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathParent, *itSmaller) << endl; // took out tempNode.toString() 4-17
      Utils::logStream.flush();
      Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathCurrent, *itLarger) << endl << endl;
      Utils::logStream.flush();
   }
-  
   return s;
 }
 
@@ -222,36 +222,3 @@ string UnionFind::toStringPath(vector<Node> path, Node bottom)
   }
   return s;
 }
-
-bool UnionFind::checkPathsEqual(vector<Node> path1, vector<Node> path2)
-{
-   bool result = true;
-   vector<Node>::iterator it1;
-   vector<Node>::iterator it2;
-   
-   it1 = path1.begin();
-   it2 = path2.begin();
-   int i = 0;
-   if(path1.size() != path2.size())
-   {
-      cout << "VARIATION 1" << endl;
-      result = false;
-   }
-   while(it1 != path1.end() && it2 != path2.end())
-   {
-      if(!((*it1).equals((*it2))))
-      {
-        cout << "VARTIATION 2" << endl;
-        result = false;
-      }
-      ++it1;
-      ++it2;
-      ++i;
-   }
-   if(result)
-   {
-      cout << "VARIATION 3" << endl;
-   }
-   return result;
-}
-
