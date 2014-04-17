@@ -66,8 +66,8 @@ void UnionFind::addLink(int a, int b)
     Node tempNode;
     tempNode.setCurrentValue(larger); // 4-16-14 Look at this
     tempNode.setParentValue(smaller);
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
-    Utils::logStream << this->dumpPaths(smaller, larger) << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
+    Utils::logStream << endl << this->dumpPaths(smaller, larger) << endl;
     Utils::logStream.flush();
   }
   else
@@ -75,9 +75,9 @@ void UnionFind::addLink(int a, int b)
     // Trying to incorporate rootOfSmaller and smallerNode
 
     Node tempNode;
-    
-    tempNode.setCurrentValue(smaller); // ACTUALLY LOOK AT THIS
-    tempNode.setParentValue(larger);
+    // 4-17-14, Matched set_Value to if statement above to print correctly.
+    tempNode.setCurrentValue(larger); // ACTUALLY LOOK AT THIS
+    tempNode.setParentValue(smaller);
     
     Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
@@ -178,6 +178,7 @@ string UnionFind::dumpPaths(int parent, int current)
 
   if(pathCurrent[0].getParentValue() !=( tempNode.getParentValue() ))
   {
+    Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC" << tempNode.toString() << endl;
      Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathParent, *itSmaller) << endl; // took out tempNode.toString() 4-17
      Utils::logStream.flush();
      Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathCurrent, *itLarger) << endl << endl;
