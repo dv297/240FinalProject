@@ -44,7 +44,7 @@ void UnionFind::addLink(int a, int b)
   if(currentNode.getCurrentValue() == DUMMYX)
   {
     nodes[smaller].setCurrentValue(smaller);
-    nodes[smaller].setNextValue(smaller);
+    nodes[smaller].setParentValue(smaller);
   }
   
   // Checks if largerNode has default values
@@ -52,7 +52,7 @@ void UnionFind::addLink(int a, int b)
   if(largerNode.getCurrentValue() == DUMMYX)
   {
     nodes[larger].setCurrentValue(larger);
-    nodes[larger].setNextValue(smaller); // We changed this
+    nodes[larger].setParentValue(smaller); // We changed this
   }
   
   parentNode = this->find(larger);
@@ -64,7 +64,7 @@ void UnionFind::addLink(int a, int b)
   {
     Node tempNode;
     tempNode.setCurrentValue(larger);
-    tempNode.setNextValue(smaller);
+    tempNode.setParentValue(smaller);
     Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
   }
@@ -74,12 +74,12 @@ void UnionFind::addLink(int a, int b)
     Node tempNode;
     
     tempNode.setCurrentValue(smaller);
-    tempNode.setNextValue(larger);
+    tempNode.setParentValue(larger);
     
     Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
     
-    nodes[larger].setNextValue(smaller);
+    nodes[larger].setParentValue(smaller);
   }
   
   Utils::logStream << TAG << endl;
@@ -127,11 +127,11 @@ Node UnionFind::find(int value, vector<Node>& nodePath)
   root = nodes[value];
   nodePath.push_back(root);
   
-  if(root.getCurrentValue() != root.getNextValue())
+  if(root.getCurrentValue() != root.getParentValue())
   {
-    while(root.getCurrentValue() != root.getNextValue())
+    while(root.getCurrentValue() != root.getParentValue())
     {
-      root = nodes[root.getNextValue()];
+      root = nodes[root.getParentValue()];
       nodePath.push_back(root);
     }
   }
@@ -169,7 +169,7 @@ string UnionFind::frabjous(int smaller, int larger)
   Node tempNode;
   
   tempNode.setCurrentValue(larger);
-  tempNode.setNextValue(smaller);
+  tempNode.setParentValue(smaller);
   
   Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathSmaller, *itSmaller) << endl;
   Utils::logStream.flush();
