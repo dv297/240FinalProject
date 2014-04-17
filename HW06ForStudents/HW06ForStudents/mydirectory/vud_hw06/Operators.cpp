@@ -7,3 +7,13 @@
 //
 
 #include "UnionFind.h"
+#include "Node.h"
+
+ostream& operator <<(ostream& outputStream, Node& node){
+   return outputStream << node.toString();
+}
+
+
+ostream& operator <<(ostream& outputStream, UnionFind& uf){
+   return outputStream << uf.toString();
+}
