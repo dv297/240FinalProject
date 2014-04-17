@@ -5,11 +5,12 @@ UTILS = ../../Utilities
 M = Main.o
 UF = UnionFind.o
 N = Node.o
+O = Operators.o
 S = Scanner.o
 U = Utils.o
 
-Aprog: $(M) $(UF) $(N) $(S) $(U)
-	$(GPP) -o Aprog $(M) $(UF) $(N) $(S) $(U)
+Aprog: $(M) $(UF) $(N) $(O) $(S) $(U)
+	$(GPP) -o Aprog $(M) $(UF) $(N) $(O) $(S) $(U)
 
 Main.o: Main.h Main.cpp
 	$(GPP) -o Main.o -c -DEBUG Main.cpp
@@ -19,6 +20,9 @@ UnionFind.o: UnionFind.h UnionFind.cpp
 
 Node.o: Node.h Node.cpp
 	$(GPP) -o Node.o -c Node.cpp
+
+Operators.o: Operators.cpp
+	$(GPP) -o Operators.o -c Operators.cpp
 
 Scanner.o: $(UTILS)/Scanner.h $(UTILS)/Scanner.cpp
 	$(GPP) -o Scanner.o -c $(UTILS)/Scanner.cpp

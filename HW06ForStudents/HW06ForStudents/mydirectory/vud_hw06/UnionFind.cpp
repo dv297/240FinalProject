@@ -61,7 +61,7 @@ void UnionFind::addLink(int a, int b)
     Node tempNode;
     tempNode.setCurrentValue(larger);
     tempNode.setNextValue(smaller);
-    Utils::logStream << "BUILD TREE BY ADDING: " <<tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC: " << tempNode.toString() << endl;
     Utils::logStream.flush();
   }
   else
@@ -72,7 +72,7 @@ void UnionFind::addLink(int a, int b)
     tempNode.setCurrentValue(smaller);
     tempNode.setNextValue(larger);
     
-    Utils::logStream << "BUILD TREE BY ADDING: " << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC: " << tempNode.toString() << endl;
     Utils::logStream.flush();
     
     nodes[larger].setNextValue(smaller);
