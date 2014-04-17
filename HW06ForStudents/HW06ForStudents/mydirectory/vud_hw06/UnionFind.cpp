@@ -66,8 +66,9 @@ void UnionFind::addLink(int a, int b)
     Node tempNode;
     tempNode.setCurrentValue(larger); // 4-16-14 Look at this
     tempNode.setParentValue(smaller);
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
-    Utils::logStream << endl << this->dumpPaths(smaller, larger) << endl;
+
+
+    Utils::logStream << this->dumpPaths(smaller, larger) << endl;
     Utils::logStream.flush();
   }
   else
@@ -79,14 +80,14 @@ void UnionFind::addLink(int a, int b)
     tempNode.setCurrentValue(larger); // ACTUALLY LOOK AT THIS
     tempNode.setParentValue(smaller);
     
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
     Utils::logStream.flush();
     
     nodes[larger].setParentValue(smaller);
   }
   
   Utils::logStream << TAG << endl;
-  Utils::logStream << this->toString();
+  Utils::logStream << this->toString() << endl;
   Utils::logStream.flush();
 }
 
@@ -183,6 +184,10 @@ string UnionFind::dumpPaths(int parent, int current)
      Utils::logStream.flush();
      Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathCurrent, *itLarger) << endl << endl;
      Utils::logStream.flush();
+  }
+  else
+  {
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
   }
   return s;
 }
