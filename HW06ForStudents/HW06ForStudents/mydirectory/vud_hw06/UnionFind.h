@@ -27,8 +27,9 @@ private:
   vector<std::pair<int, int> > links;
   map<int, Node> nodes;
 
-  string frabjous(int smaller, int larger);
+  string dumpPaths(int smaller, int larger);
   string toStringPath(vector<Node> path, Node bottom);
+  bool checkPathsEqual(vector<Node> path1, vector<Node> path2);
 };
 
 #endif // UNIONFIND_H

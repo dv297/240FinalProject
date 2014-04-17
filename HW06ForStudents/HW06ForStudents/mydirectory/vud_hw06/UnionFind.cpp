@@ -51,29 +51,32 @@ void UnionFind::addLink(int a, int b)
   Node largerNode = nodes[larger];
   if(largerNode.getCurrentValue() == DUMMYX)
   {
-    nodes[larger].setCurrentValue(larger);
+    nodes[larger].setCurrentValue(larger);  // Maybe this is what causes the 4-16-14 inf loop
     nodes[larger].setParentValue(smaller); // We changed this
   }
   
   parentNode = this->find(larger);
   currentNode = this->find(smaller);
+
   //links.push_back(  std::make_pair(rootOfSmaller.getCurrentValue(), smallerNode.getCurrentValue())  );
   
-  // Basically saying if we have hit 1 -> 1
+  // Basically saying if we have hit root = root
   if(parentNode.equals(currentNode))
   {
     Node tempNode;
-    tempNode.setCurrentValue(larger);
+    tempNode.setCurrentValue(larger); // 4-16-14 Look at this
     tempNode.setParentValue(smaller);
     Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
+    Utils::logStream << this->dumpPaths(smaller, larger) << endl;
     Utils::logStream.flush();
   }
   else
   {
     // Trying to incorporate rootOfSmaller and smallerNode
+
     Node tempNode;
     
-    tempNode.setCurrentValue(smaller);
+    tempNode.setCurrentValue(smaller); // ACTUALLY LOOK AT THIS
     tempNode.setParentValue(larger);
     
     Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
@@ -122,41 +125,42 @@ Node UnionFind::find(int value)
  **/
 Node UnionFind::find(int value, vector<Node>& nodePath)
 {
-  Node root;
+  Node current;
   
-  root = nodes[value];
-  nodePath.push_back(root);
+  current = nodes[value];
+  nodePath.push_back(current);
   
-  if(root.getCurrentValue() != root.getParentValue())
+  if(current.getCurrentValue() != current.getParentValue())
   {
-    while(root.getCurrentValue() != root.getParentValue())
+    while(current.getCurrentValue() != current.getParentValue())
     {
-      root = nodes[root.getParentValue()];
-      nodePath.push_back(root);
+      current = nodes[current.getParentValue()];
+      nodePath.push_back(current);
     }
   }
-  return root;
+  return current;
 }
 
 
 /********************************************************************
  * Run if rootOfSmaller.equals(thisValue), passed in smaller then larger
  **/
-string UnionFind::frabjous(int smaller, int larger)
+string UnionFind::dumpPaths(int parent, int current)
 {
   string s = "";
   
   // Note: Buell marks down if two declarations are on one line.
-  Node thisValue;
-  Node rootOfSmaller;
-  vector<Node> pathSmaller;
-  vector<Node> pathLarger;
+  Node currentValue;
+  Node parentValue;
+
+  vector<Node> pathParent;
+  vector<Node> pathCurrent;
   
-  rootOfSmaller = this->find(smaller, pathSmaller);
-  thisValue = this->find(larger, pathLarger);
+  currentValue = this->find(parent, pathParent);
+  parentValue = this->find(current, pathCurrent);
   
-  vector<Node>::iterator itSmaller = pathSmaller.end();
-  vector<Node>::iterator itLarger = pathLarger.end();
+  vector<Node>::iterator itSmaller = pathParent.end();
+  vector<Node>::iterator itLarger = pathCurrent.end();
   
   while((*itSmaller).equals(*itLarger))
   {
@@ -164,17 +168,20 @@ string UnionFind::frabjous(int smaller, int larger)
     --itLarger;
   }
   
-  Node topOfSmaller = *itSmaller;
-  Node topOfLarger = *itLarger;
+  //Node topOfSmaller = *itSmaller;
+  //Node topOfLarger = *itLarger;
   Node tempNode;
   
-  tempNode.setCurrentValue(larger);
-  tempNode.setParentValue(smaller);
-  
-  Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathSmaller, *itSmaller) << endl;
-  Utils::logStream.flush();
-  Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathLarger, *itLarger) << endl << endl;
-  Utils::logStream.flush();
+  tempNode.setCurrentValue(current);
+  tempNode.setParentValue(parent);
+ 
+  if(!checkPathsEqual(pathParent, pathCurrent))
+  { 
+     Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathParent, *itSmaller) << endl;
+     Utils::logStream.flush();
+     Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathCurrent, *itLarger) << endl << endl;
+     Utils::logStream.flush();
+  }
   
   return s;
 }
@@ -214,4 +221,22 @@ string UnionFind::toStringPath(vector<Node> path, Node bottom)
     if( (*it).equals(bottom)) break;
   }
   return s;
+}
+
+bool UnionFind::checkPathsEqual(vector<Node> path1, vector<Node> path2)
+{
+   bool result = true;
+   vector<Node>:: iterator it1;
+   vector<Node>:: iterator it2;
+   for(it1 = path1.begin(); it1!= path1.end(); ++it1)
+   {
+      for(it2 = path2.begin(); it2 !=path2.end(); ++it2)
+      {
+         if(!(*it1).equals((*it2)))
+         {
+             result = false;
+         }
+      }
+   }
+   return result;
 }

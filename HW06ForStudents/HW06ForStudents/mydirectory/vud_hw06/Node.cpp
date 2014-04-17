@@ -13,17 +13,18 @@ static const string TAG = "Node: ";
 Node::Node()
 {
   this-> parentValue= DUMMYX;
-  this-> currentValue = DUMMYY;
+  this-> currentValue = DUMMYX;
 }
 
 /********************************************************************
  *
- **/
+
 Node::Node(int x, int y)
 {
   this-> parentValue = x;
   this-> currentValue = y;
 }
+**/
 
 /********************************************************************
  *
@@ -93,12 +94,13 @@ bool Node::atTop()
 }
 
 /********************************************************************
- *
+ * 4-16-14
+ * - Turns out that all of our output got flipped when we did the Big Name Change of 4-16-14.
  **/
 string Node::toString()
 {
   string s = "";
-  s += "(" + Utils::Format(this->getParentValue(), 3) + " -> ";
-  s += Utils::Format(this->getCurrentValue(), 3) + ")";
+  s += "(" + Utils::Format(this->getCurrentValue(), 3) + " -> ";
+  s += Utils::Format(this->getParentValue(), 3) + ")";
   return s;
 }
