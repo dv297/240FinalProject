@@ -12,8 +12,8 @@ static const string TAG = "Node: ";
  **/
 Node::Node()
 {
-  this->currentValue = DUMMYX;
-  this->nextValue = DUMMYY;
+  this-> parentValue= DUMMYX;
+  this-> currentValue = DUMMYY;
 }
 
 /********************************************************************
@@ -21,8 +21,8 @@ Node::Node()
  **/
 Node::Node(int x, int y)
 {
-  this->currentValue = x;
-  this->nextValue = y;
+  this-> parentValue = x;
+  this-> currentValue = y;
 }
 
 /********************************************************************
@@ -43,9 +43,9 @@ int Node::getCurrentValue()
 /********************************************************************
  *
  **/
-int Node::getNextValue()
+int Node::getParentValue()
 {
-  return this->nextValue;
+  return this->parentValue;
 }
 
 /********************************************************************
@@ -59,9 +59,9 @@ void Node::setCurrentValue(int value)
 /********************************************************************
  *
  **/
-void Node::setNextValue(int value)
+void Node::setParentValue(int value)
 {
-  this->nextValue = value;
+  this-> parentValue = value;
 }
 
 /********************************************************************
@@ -70,7 +70,7 @@ void Node::setNextValue(int value)
 bool Node::equals(Node that)
 {
   if (this->currentValue == that.getCurrentValue()
-      && this->nextValue == that.getNextValue())
+      && this->parentValue == that.getParentValue())
   {
     return true;
   }
@@ -89,7 +89,7 @@ bool Node::equals(Node that)
  **/
 bool Node::atTop()
 {
-  return (this->currentValue == this->nextValue);
+  return (this->parentValue == this->currentValue);
 }
 
 /********************************************************************
@@ -98,7 +98,7 @@ bool Node::atTop()
 string Node::toString()
 {
   string s = "";
-  s += "(" + Utils::Format(this->getCurrentValue(), 3) + " -> ";
-  s += Utils::Format(this->getNextValue(), 3) + ")";
+  s += "(" + Utils::Format(this->getParentValue(), 3) + " -> ";
+  s += Utils::Format(this->getCurrentValue(), 3) + ")";
   return s;
 }

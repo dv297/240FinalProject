@@ -15,9 +15,9 @@ public:
   virtual ~Node();
 
   int getCurrentValue();
-  int getNextValue();
+  int getParentValue();
   void setCurrentValue(int value);
-  void setNextValue(int value);
+  void setParentValue(int value);
 
   bool equals(Node that);
   bool atTop();
@@ -26,7 +26,7 @@ public:
 
 private:
   int currentValue;
-  int nextValue;
+  int parentValue;
 
 };
 
