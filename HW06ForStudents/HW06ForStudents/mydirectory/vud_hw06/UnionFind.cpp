@@ -24,6 +24,9 @@ void UnionFind::addLink(int a, int b)
   int larger; // Holds the larger value, originally whatever
   int smaller;  // Holds the smaller value, originally which
   
+  Node parentNode;
+  Node currentNode;
+  
   if(a <= b)
   {
     smaller = a;
@@ -36,8 +39,9 @@ void UnionFind::addLink(int a, int b)
   }
   
   // Checks if smallerNode has default values
-  Node smallerNode = nodes[smaller];
-  if(smallerNode.getCurrentValue() == DUMMYX)
+  currentNode = nodes[smaller];
+  
+  if(currentNode.getCurrentValue() == DUMMYX)
   {
     nodes[smaller].setCurrentValue(smaller);
     nodes[smaller].setNextValue(smaller);
@@ -51,17 +55,17 @@ void UnionFind::addLink(int a, int b)
     nodes[larger].setNextValue(smaller); // We changed this
   }
   
-  Node rootOfSmaller = this->find(larger);
-  smallerNode = this->find(smaller);
+  parentNode = this->find(larger);
+  currentNode = this->find(smaller);
   //links.push_back(  std::make_pair(rootOfSmaller.getCurrentValue(), smallerNode.getCurrentValue())  );
   
   // Basically saying if we have hit 1 -> 1
-  if(rootOfSmaller.equals(smallerNode))
+  if(parentNode.equals(currentNode))
   {
     Node tempNode;
     tempNode.setCurrentValue(larger);
     tempNode.setNextValue(smaller);
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC: " << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
   }
   else
@@ -72,7 +76,7 @@ void UnionFind::addLink(int a, int b)
     tempNode.setCurrentValue(smaller);
     tempNode.setNextValue(larger);
     
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC: " << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
     
     nodes[larger].setNextValue(smaller);
