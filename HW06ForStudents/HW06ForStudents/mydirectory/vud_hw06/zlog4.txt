@@ -1,6 +1,6 @@
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Apr 16 20:01:59 2014
+TIME CPU percent    0.00   0.00                    Thu Apr 17 10:01:42 2014
 TIME beginning             0.00 u         0.00 s   Res:      585728
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
@@ -10,29 +10,49 @@ Main: Beginning execution
 Main: infile 'zinx.txt'
 Main: outfile 'zoutx.txt'
 Main: logfile 'zlog4.txt'
-UnionFind: BUILD TREE BY ADDING ARC: (  4 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->   0)
+UnionFind: PATH ONE (  4 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  4 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: (  5 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  5 ->   0)
+UnionFind: PATH ONE (  5 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  5 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
 (  5 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: ( 12 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC( 12 ->   0)
+UnionFind: PATH ONE ( 12 ->   0)(  0 ->   0)
+UnionFind: PATH TWO ( 12 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
 (  5 ->   0)(  0 ->   0)
 ( 12 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: ( 13 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC( 13 ->   0)
+UnionFind: PATH ONE ( 13 ->   0)(  0 ->   0)
+UnionFind: PATH TWO ( 13 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
 (  5 ->   0)(  0 ->   0)
 ( 12 ->   0)(  0 ->   0)
 ( 13 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->   0)
+UnionFind: PATH ONE ( 17 ->   0)(  0 ->   0)
+UnionFind: PATH TWO ( 17 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
@@ -40,7 +60,11 @@ UnionFind:
 ( 12 ->   0)(  0 ->   0)
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: ( 19 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC( 19 ->   0)
+UnionFind: PATH ONE ( 19 ->   0)(  0 ->   0)
+UnionFind: PATH TWO ( 19 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  4 ->   0)(  0 ->   0)
@@ -49,7 +73,7 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   0)(  0 ->   0)
 ( 19 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->  17)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -59,7 +83,7 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->   5)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -70,7 +94,7 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -81,7 +105,7 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   0)(  0 ->   0)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -92,7 +116,11 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  3 ->   0)
+UnionFind: BUILD TREE BY ADDING ARC(  3 ->   0)
+UnionFind: PATH ONE (  3 ->   0)(  0 ->   0)
+UnionFind: PATH TWO (  3 ->   0)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -104,7 +132,7 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->   3)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -116,20 +144,11 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->   3)
-UnionFind: 
-(  0 ->   0)
-(  1 ->   1)
-(  2 ->   2)
-(  3 ->   2)(  2 ->   2)
-(  4 ->   0)(  0 ->   0)
-(  5 ->   2)(  2 ->   2)
-(  6 ->   3)(  3 ->   2)(  2 ->   2)
-( 12 ->   2)(  2 ->   2)
-( 13 ->   0)(  0 ->   0)
-( 17 ->   1)(  1 ->   1)
-( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  7 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->   3)
+UnionFind: PATH ONE (  6 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO (  6 ->   3)(  3 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -138,12 +157,15 @@ UnionFind:
 (  4 ->   0)(  0 ->   0)
 (  5 ->   2)(  2 ->   2)
 (  6 ->   3)(  3 ->   2)(  2 ->   2)
-(  7 ->   3)(  3 ->   2)(  2 ->   2)
 ( 12 ->   2)(  2 ->   2)
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  9 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC(  7 ->   3)
+UnionFind: PATH ONE (  7 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO (  7 ->   3)(  3 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -153,12 +175,15 @@ UnionFind:
 (  5 ->   2)(  2 ->   2)
 (  6 ->   3)(  3 ->   2)(  2 ->   2)
 (  7 ->   3)(  3 ->   2)(  2 ->   2)
-(  9 ->   3)(  3 ->   2)(  2 ->   2)
 ( 12 ->   2)(  2 ->   2)
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  9 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC(  9 ->   3)
+UnionFind: PATH ONE (  9 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO (  9 ->   3)(  3 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -173,7 +198,30 @@ UnionFind:
 ( 13 ->   0)(  0 ->   0)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC(  9 ->   3)
+UnionFind: PATH ONE (  9 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO (  9 ->   3)(  3 ->   2)
+
+
+UnionFind: 
+(  0 ->   0)
+(  1 ->   1)
+(  2 ->   2)
+(  3 ->   2)(  2 ->   2)
+(  4 ->   0)(  0 ->   0)
+(  5 ->   2)(  2 ->   2)
+(  6 ->   3)(  3 ->   2)(  2 ->   2)
+(  7 ->   3)(  3 ->   2)(  2 ->   2)
+(  9 ->   3)(  3 ->   2)(  2 ->   2)
+( 12 ->   2)(  2 ->   2)
+( 13 ->   0)(  0 ->   0)
+( 17 ->   1)(  1 ->   1)
+( 19 ->   2)(  2 ->   2)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->   3)
+UnionFind: PATH ONE ( 16 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 16 ->   3)(  3 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -189,7 +237,11 @@ UnionFind:
 ( 16 ->   3)(  3 ->   2)(  2 ->   2)
 ( 17 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->   3)
+UnionFind: PATH ONE ( 18 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 18 ->   3)(  3 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -206,7 +258,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->   4)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -223,7 +275,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->   4)
+UnionFind: PATH ONE (  8 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -241,7 +297,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->   4)
+UnionFind: PATH ONE (  8 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -259,7 +319,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  4 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->   9)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -277,7 +337,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->   4)
+UnionFind: PATH ONE ( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -296,7 +360,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  4 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -315,7 +379,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  5 ->   2)
+UnionFind: BUILD TREE BY ADDING ARC(  5 ->   2)
+UnionFind: PATH ONE (  5 ->   2)(  2 ->   2)
+UnionFind: PATH TWO (  5 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -334,7 +402,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  4 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->   5)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -353,7 +421,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  5 ->   6)
+UnionFind: BUILD TREE BY ADDING ARC(  5 ->   6)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -372,7 +440,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->   5)
+UnionFind: PATH ONE (  8 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -391,7 +463,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  9 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC(  9 ->   5)
+UnionFind: PATH ONE (  9 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO (  9 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -410,7 +486,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->   5)
+UnionFind: PATH ONE ( 14 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 14 ->   5)(  5 ->   4)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -430,7 +510,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->   5)
+UnionFind: PATH ONE ( 17 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 17 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -450,7 +534,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->   6)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->   6)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -470,7 +554,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->   9)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -490,7 +574,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->  14)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->  14)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -510,7 +594,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->   6)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->   6)
+UnionFind: PATH ONE ( 14 ->   6)(  6 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 14 ->   6)(  6 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -530,7 +618,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->   7)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->   7)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -550,7 +638,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  3 ->   7)
+UnionFind: BUILD TREE BY ADDING ARC(  3 ->   7)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -570,7 +658,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  5 ->   7)
+UnionFind: BUILD TREE BY ADDING ARC(  5 ->   7)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -590,7 +678,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  7 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC(  7 ->   9)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -610,7 +698,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  9 ->   7)
+UnionFind: BUILD TREE BY ADDING ARC(  9 ->   7)
+UnionFind: PATH ONE (  9 ->   7)(  7 ->   5)
+UnionFind: PATH TWO (  9 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -630,7 +722,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  7 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  7 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -650,7 +742,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  3 ->   8)
+UnionFind: BUILD TREE BY ADDING ARC(  3 ->   8)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -670,7 +762,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -690,7 +782,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->  13)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -710,7 +802,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  0 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC(  0 ->   9)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -730,7 +822,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->   9)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -750,7 +842,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->   9)
+UnionFind: PATH ONE ( 17 ->   9)(  9 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 17 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -770,7 +866,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->   4)
+UnionFind: PATH ONE ( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -790,7 +890,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 11 ->  10)
+UnionFind: BUILD TREE BY ADDING ARC( 11 ->  10)
+UnionFind: PATH ONE ( 11 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 11 ->  10)( 10 ->   4)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -811,28 +915,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->  12)
-UnionFind: 
-(  0 ->   0)
-(  1 ->   1)
-(  2 ->   2)
-(  3 ->   2)(  2 ->   2)
-(  4 ->   1)(  1 ->   1)
-(  5 ->   4)(  4 ->   1)(  1 ->   1)
-(  6 ->   2)(  2 ->   2)
-(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-(  8 ->   3)(  3 ->   2)(  2 ->   2)
-(  9 ->   1)(  1 ->   1)
-( 10 ->   4)(  4 ->   1)(  1 ->   1)
-( 11 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-( 12 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-( 13 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-( 14 ->   6)(  6 ->   2)(  2 ->   2)
-( 16 ->   3)(  3 ->   2)(  2 ->   2)
-( 17 ->   1)(  1 ->   1)
-( 18 ->   4)(  4 ->   1)(  1 ->   1)
-( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -847,13 +930,13 @@ UnionFind:
 ( 10 ->   4)(  4 ->   1)(  1 ->   1)
 ( 11 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
 ( 12 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+( 13 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 16 ->   3)(  3 ->   2)(  2 ->   2)
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->  13)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -873,8 +956,8 @@ UnionFind:
 ( 16 ->   3)(  3 ->   2)(  2 ->   2)
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
-( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 11 ->   1)
+( 19 ->   2)(  2 ->   2)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -895,7 +978,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 11 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC( 11 ->   1)
+UnionFind: PATH ONE ( 11 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 11 ->  10)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -916,7 +1003,32 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->  11)
+UnionFind: BUILD TREE BY ADDING ARC( 11 ->   5)
+UnionFind: PATH ONE ( 11 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 11 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
+UnionFind: 
+(  0 ->   0)
+(  1 ->   1)
+(  2 ->   2)
+(  3 ->   2)(  2 ->   2)
+(  4 ->   1)(  1 ->   1)
+(  5 ->   4)(  4 ->   1)(  1 ->   1)
+(  6 ->   2)(  2 ->   2)
+(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+(  8 ->   3)(  3 ->   2)(  2 ->   2)
+(  9 ->   1)(  1 ->   1)
+( 10 ->   4)(  4 ->   1)(  1 ->   1)
+( 11 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+( 12 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+( 14 ->   6)(  6 ->   2)(  2 ->   2)
+( 16 ->   3)(  3 ->   2)(  2 ->   2)
+( 17 ->   1)(  1 ->   1)
+( 18 ->   4)(  4 ->   1)(  1 ->   1)
+( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->  11)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -937,7 +1049,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->  11)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->  11)
+UnionFind: PATH ONE ( 14 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -958,7 +1074,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 11 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC( 11 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -979,7 +1095,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 11 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC( 11 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1000,7 +1116,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  2 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  2 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1021,7 +1137,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  4 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  4 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1042,7 +1158,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1063,7 +1179,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  7 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC(  7 ->  12)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1084,7 +1200,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 12 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC( 12 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1105,7 +1221,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  11)( 11 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 12 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC( 12 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1126,7 +1242,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: (  8 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC(  8 ->  13)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1147,7 +1263,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 10 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC( 10 ->  13)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1168,7 +1284,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 13 ->  10)
+UnionFind: BUILD TREE BY ADDING ARC( 13 ->  10)
+UnionFind: PATH ONE ( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 13 ->  10)( 10 ->   4)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1189,7 +1309,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 13 ->  16)
+UnionFind: BUILD TREE BY ADDING ARC( 13 ->  16)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1210,7 +1330,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->  13)
+UnionFind: PATH ONE ( 17 ->  13)( 13 ->  10)
+UnionFind: PATH TWO ( 17 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1231,7 +1355,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->  13)
+UnionFind: PATH ONE ( 18 ->  13)( 13 ->  10)
+UnionFind: PATH TWO ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1252,7 +1380,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->   2)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->   2)
+UnionFind: PATH ONE ( 14 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1273,7 +1405,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->   3)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->   3)
+UnionFind: PATH ONE ( 14 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1294,7 +1430,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->   8)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->   8)
+UnionFind: PATH ONE ( 14 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1315,7 +1455,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->   5)
+UnionFind: PATH ONE ( 15 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 15 ->   5)(  5 ->   4)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1337,7 +1481,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->  15)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->  15)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1359,7 +1503,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->   8)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->   8)
+UnionFind: PATH ONE ( 15 ->   8)(  8 ->   3)(  3 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 15 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1381,7 +1529,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 12 ->  15)
+UnionFind: BUILD TREE BY ADDING ARC( 12 ->  15)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1403,7 +1551,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->  13)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->  13)
+UnionFind: PATH ONE ( 15 ->  13)( 13 ->  10)
+UnionFind: PATH TWO ( 15 ->  12)( 12 ->   7)(  7 ->   5)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1425,7 +1577,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->  15)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->  15)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1447,7 +1599,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1469,7 +1621,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->  15)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->  15)
+UnionFind: PATH ONE ( 18 ->  15)( 15 ->  14)
+UnionFind: PATH TWO ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1491,7 +1647,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1513,7 +1669,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->   5)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->   5)
+UnionFind: PATH ONE ( 16 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 16 ->  13)( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1535,7 +1695,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->  10)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->  10)
+UnionFind: PATH ONE ( 16 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 16 ->  13)( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1557,7 +1721,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->  10)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->  10)
+UnionFind: PATH ONE ( 16 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 16 ->  13)( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1579,7 +1747,11 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->  12)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->  12)
+UnionFind: PATH ONE ( 16 ->  12)( 12 ->   7)(  7 ->   5)(  5 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 16 ->  13)( 13 ->  10)( 10 ->   4)(  4 ->   1)(  1 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1601,7 +1773,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 15 ->  16)
+UnionFind: BUILD TREE BY ADDING ARC( 15 ->  16)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1623,7 +1795,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 16 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC( 16 ->  17)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1645,7 +1817,7 @@ UnionFind:
 ( 17 ->  16)( 16 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->  17)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1667,7 +1839,7 @@ UnionFind:
 ( 17 ->   1)(  1 ->   1)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  6 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC(  6 ->  17)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1689,7 +1861,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->  14)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->  14)
+UnionFind: PATH ONE ( 17 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 17 ->   6)(  6 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1711,7 +1887,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 17 ->  15)
+UnionFind: BUILD TREE BY ADDING ARC( 17 ->  15)
+UnionFind: PATH ONE ( 17 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 17 ->   6)(  6 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1733,7 +1913,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->  17)
+UnionFind: PATH ONE ( 18 ->  17)( 17 ->   6)(  6 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 18 ->  15)( 15 ->  14)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1755,7 +1939,7 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1777,7 +1961,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->   1)(  1 ->   1)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->   4)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->   4)
+UnionFind: PATH ONE ( 18 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 18 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1799,7 +1987,7 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->   1)(  1 ->   1)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 14 ->  18)
+UnionFind: BUILD TREE BY ADDING ARC( 14 ->  18)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1821,7 +2009,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->  17)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->  17)
+UnionFind: PATH ONE ( 18 ->  17)( 17 ->   6)(  6 ->   2)(  2 ->   2)
+UnionFind: PATH TWO ( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1843,7 +2035,7 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->  15)( 15 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
-UnionFind: BUILD TREE BY ADDING ARC: (  1 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC(  1 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1865,7 +2057,11 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 19 ->   9)
+UnionFind: BUILD TREE BY ADDING ARC( 19 ->   9)
+UnionFind: PATH ONE ( 19 ->   9)(  9 ->   1)(  1 ->   1)
+UnionFind: PATH TWO ( 19 ->   1)
+
+
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1887,7 +2083,7 @@ UnionFind:
 ( 17 ->   6)(  6 ->   2)(  2 ->   2)
 ( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 ( 19 ->   1)(  1 ->   1)
-UnionFind: BUILD TREE BY ADDING ARC: ( 18 ->  19)
+UnionFind: BUILD TREE BY ADDING ARC( 18 ->  19)
 UnionFind: 
 (  0 ->   0)
 (  1 ->   1)
@@ -1911,8 +2107,8 @@ UnionFind:
 ( 19 ->  18)( 18 ->  14)( 14 ->   6)(  6 ->   2)(  2 ->   2)
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Apr 16 20:01:59 2014
-TIME ending                0.01 u         0.00 s   Res:      643072
+TIME CPU percent    0.00   0.00                    Thu Apr 17 10:01:42 2014
+TIME ending                0.01 u         0.00 s   Res:      638976
 TIME ending                0.01 u_t       0.00 s_t
 TIME***********************************************************************
 
