@@ -24,7 +24,6 @@ public:
   string toString();
 
 private:
-  vector<std::pair<int, int> > links;
   map<int, Node> nodes;
 
   string dumpPaths(int smaller, int larger);

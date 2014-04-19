@@ -105,7 +105,7 @@ void UnionFind::addLink(int a, int b)
     tempNode.setCurrentValue(larger); // ACTUALLY LOOK AT THIS
     tempNode.setParentValue(smaller);
     
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
     Utils::logStream.flush();
     
     nodes[larger].setParentValue(smaller);
@@ -213,15 +213,24 @@ string UnionFind::dumpPaths(int parent, int current)
 
   if(pathCurrent[0].getParentValue() !=( tempNode.getParentValue() ))
   {
-    Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC" << tempNode.toString() << endl;
-     Utils::logStream << TAG << "PATH ONE " << tempNode.toString() << this->toStringPath(pathParent, *itSmaller) << endl; // took out tempNode.toString() 4-17
-     Utils::logStream.flush();
-     Utils::logStream << TAG << "PATH TWO " << this->toStringPath(pathCurrent, *itLarger) << endl << endl;
+     Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC" << tempNode.toString() << endl;
+     std::string pathOne;
+     std::string pathTwo;
+     pathOne = tempNode.toString() + this->toStringPath(pathParent, *itSmaller); // took out tempNode.toString() 4-17i
+     pathTwo = this->toStringPath(pathCurrent, *itLarger);
+     while(pathOne.substr( pathOne.size()-12, pathOne.size() ) == pathTwo.substr( pathTwo.size()-12, pathTwo.size()))
+     // 11 is the number of characters to represent one node.
+     {
+        pathOne = pathOne.substr(0, pathOne.size()-12);
+        pathTwo = pathTwo.substr(0, pathTwo.size()-12);
+     }
+     Utils::logStream << TAG << "PATH ONE " << pathOne << endl;
+     Utils::logStream << TAG << "PATH TWO " << pathTwo << endl << endl;
      Utils::logStream.flush();
   }
   else
   {
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString();
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
   }
   return s;
 }

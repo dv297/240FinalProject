@@ -1,3 +1,4 @@
 #!/bin/bash
 make
-Aprog zin1.txt 111out 111log
+Aprog zinx.txt 111out 111log
+
