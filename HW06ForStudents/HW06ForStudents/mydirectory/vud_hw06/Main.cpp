@@ -2,7 +2,9 @@
  * Main program for doing union-find algorithm.
  *
  * Author/copyright:  Duncan Buell. All rights reserved.
+ * Modified by: Daniel Vu, Collin Haines, Kevin Silver, Julio Diaz
  * Date: 12 January 2014
+ * Submission Date: 24 April 2014
  *
 **/
 

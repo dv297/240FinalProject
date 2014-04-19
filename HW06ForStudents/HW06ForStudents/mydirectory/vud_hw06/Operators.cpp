@@ -1,13 +1,15 @@
-//
-//  Operator.cpp
-//  Homework6GitHub
-//
-//  Created by Collin Haines on 4/16/14.
-//  Copyright (c) 2014 Collin Haines. All rights reserved.
-//
-
 #include "UnionFind.h"
 #include "Node.h"
+
+/********************************************************************
+ * Class for
+ *
+ * Authors/copyright: Duncan Buell. All rights reserved.
+ * Modifed by: Daniel Vu, Collin Haines, Kevin Silver, Julio Diaz
+ * Speculated start date: January 2014
+ * Submission Date: 24 April 2014
+ *
+ **/
 
 ostream& operator <<(ostream& outputStream, Node& node){
    return outputStream << node.toString();

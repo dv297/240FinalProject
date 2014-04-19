@@ -1,23 +1,48 @@
 #include "UnionFind.h"
 
+/********************************************************************
+ * Class for
+ *
+ * Authors/copyright: Duncan Buell. All rights reserved.
+ * Modifed by: Daniel Vu, Collin Haines, Kevin Silver, Julio Diaz
+ * Speculated start date: January 2014
+ * Submission Date: 24 April 2014
+ *
+ **/
+
 static const string TAG = "UnionFind: ";
 
 /********************************************************************
- *
+ * Constructor.
  **/
 UnionFind::UnionFind()
 {
 }
 
 /********************************************************************
- *
+ * Destructor.
  **/
 UnionFind::~UnionFind()
 {
 }
 
 /********************************************************************
+ * Accessors and mutators.
+ **/
+
+/********************************************************************
+ * General functions.
+ **/
+
+/********************************************************************
+ * Function to add links to the union-find algorithm.
  *
+ * Parameters:
+ *   a - 
+ *   b -
+ *
+ * Returns:
+ *   none
  **/
 void UnionFind::addLink(int a, int b)
 {
@@ -92,8 +117,13 @@ void UnionFind::addLink(int a, int b)
 }
 
 /********************************************************************
- * 4-14-14
- * - Found in the .h file.
+ * Function to dump trees.
+ *
+ * -- Unused --
+ *
+ * Returns:
+ *   none
+ *
  **/
 void UnionFind::dumpTrees()
 {
@@ -101,9 +131,13 @@ void UnionFind::dumpTrees()
 }
 
 /********************************************************************
- * 4-14-14
- * - In the Original Main.cpp there is a line "unionFind.buildTrees()"
- *   commented out.
+ * Function to build trees.
+ *
+ * -- Unused --
+ *
+ * Returns:
+ *   none
+ *
  **/
 void UnionFind::buildTrees()
 {
@@ -111,7 +145,7 @@ void UnionFind::buildTrees()
 }
 
 /********************************************************************
- *
+ * 
  **/
 Node UnionFind::find(int value)
 {
