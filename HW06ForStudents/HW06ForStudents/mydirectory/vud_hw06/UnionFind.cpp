@@ -117,34 +117,6 @@ void UnionFind::addLink(int a, int b)
 }
 
 /********************************************************************
- * Function to dump trees.
- *
- * -- Unused --
- *
- * Returns:
- *   none
- *
- **/
-void UnionFind::dumpTrees()
-{
-  
-}
-
-/********************************************************************
- * Function to build trees.
- *
- * -- Unused --
- *
- * Returns:
- *   none
- *
- **/
-void UnionFind::buildTrees()
-{
-  
-}
-
-/********************************************************************
  * 
  **/
 Node UnionFind::find(int value)
@@ -267,7 +239,10 @@ string UnionFind::toStringPath(vector<Node> path, Node bottom)
   for(vector<Node>::iterator it = path.begin(); it != path.end(); ++it)
   {
     s += (*it).toString();
-    if( (*it).equals(bottom)) break;
+    if((*it).equals(bottom))
+    {
+      break;
+    }
   }
   return s;
 }

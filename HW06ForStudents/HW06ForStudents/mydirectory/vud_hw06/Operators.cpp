@@ -1,4 +1,4 @@
-#include "UnionFind.h"
+
 #include "Node.h"
 
 /********************************************************************
@@ -21,22 +21,7 @@
  * Returns:
  *   the 'toString' within 'Node'
  **/
-ostream& operator <<(ostream& outputStream, Node& node)
+ostream& operator <<(ostream& outputStream, const Node& node)
 {
    return outputStream << node.toString();
 } // ostream& operator <<(ostream& outputStream, Node& node)
-
-/********************************************************************
- * Overloaded '<<' operator, not a 'UnionFind' member function.
- *
- * Parameters:
- *   outputStream - out stream using 'iosfwd'
- *   uf - 'UnionFind' class calling for the 'toString()'
- *
- * Returns:
- *   the 'toString' used within 'UnionFind'
- **/
-ostream& operator <<(ostream& outputStream, UnionFind& uf)
-{
-   return outputStream << uf.toString();
-} // ostream& operator <<(ostream& outputStream, UnionFind& uf)

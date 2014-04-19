@@ -26,17 +26,6 @@ Node::Node()
   this->currentValue = DUMMYX;
 }
 
-#warning - Do we need this?
-/********************************************************************
- *
-
-Node::Node(int x, int y)
-{
-  this-> parentValue = x;
-  this-> currentValue = y;
-}
-**/
-
 /********************************************************************
  * Destructor.
  **/
@@ -54,7 +43,7 @@ Node::~Node()
  * Returns:
  *   the current value of the node
  **/
-int Node::getCurrentValue()
+int Node::getCurrentValue() const
 {
   return this->currentValue;
 } // int Node::getCurrentValue()
@@ -65,7 +54,7 @@ int Node::getCurrentValue()
  * Returns:
  *   the parent value of the node
  **/
-int Node::getParentValue()
+int Node::getParentValue() const
 {
   return this->parentValue;
 } // int Node::getParentValue()
@@ -143,10 +132,10 @@ bool Node::atTop()
  * Returns:
  *   the usual 'string', in this case, a formatted node
  **/
-string Node::toString()
+string Node::toString() const
 {
   string s = "";
-  s += "(" + Utils::Format(this->getCurrentValue(), 3) + " -> ";
-  s += Utils::Format(this->getParentValue(), 3) + ")";
+  s += "(" + Utils::Format(getCurrentValue(), 3) + " -> ";
+  s += Utils::Format(getParentValue(), 3) + ")";
   return s;
 } // string Node::toString()

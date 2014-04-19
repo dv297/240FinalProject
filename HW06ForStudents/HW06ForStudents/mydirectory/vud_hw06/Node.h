@@ -31,15 +31,17 @@ public:
   /****************************************************************
    * General functions
    **/
-  int getCurrentValue();
-  int getParentValue();
+  int getCurrentValue() const;
+  int getParentValue() const;
   void setCurrentValue(int value);
   void setParentValue(int value);
+  
+  friend ostream& operator <<(ostream& outputStream, const Node& node);
 
   bool equals(Node that);
   bool atTop();
 
-  string toString();
+  string toString() const;
 
 private:
   int currentValue;

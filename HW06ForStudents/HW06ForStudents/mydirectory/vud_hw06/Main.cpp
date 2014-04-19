@@ -42,26 +42,6 @@ int main(int argc, char *argv[])
   Utils::logStream << TAG << "outfile '" << outFileName << "'" << endl;
   Utils::logStream << TAG << "logfile '" << logFileName << "'" << endl;
 
-#warning - Possible debugging/deletion
-/*
-  srand(1);
-  int count = 20;
-  for(int i = 0; i < 100; ++i)
-  {
-    int a = rand() % count;
-    int b = rand() % count;
-    while(a == b)
-    {
-      b = rand() % count;
-    }
-
-    Utils::logStream << Utils::Format(a, 3) << " " << Utils::Format(b, 3) << endl;
-    Utils::logStream.flush();
-
-  }
-  exit(1);
-*/
-
   // open the input file and do the real work
   inStream.openFile(inFileName);
   int numberOfArcs = inStream.nextInt();
@@ -72,20 +52,17 @@ int main(int argc, char *argv[])
     int b = inStream.nextInt();
 
     if(a < b)
+    {
       unionFind.addLink(a, b);
+    }
     else
+    {
       unionFind.addLink(b, a);
+    }
   }
 
   outStream << unionFind.toString() << endl;
   outStream.flush();
-  
-#warning - Possible removal
-  unionFind.buildTrees();
-  // Next two lines are commented out to match zzlog3.txt
-  //Utils::logStream << unionFind.toString() << endl;
-  //Utils::logStream.flush();
-
 
   // let the world know we're done, close files, stop timer, finish
   timeCallOutput = Utils::timecall("ending");

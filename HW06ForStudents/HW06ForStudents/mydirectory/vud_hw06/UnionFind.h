@@ -33,8 +33,6 @@ public:
    * General functions.
    **/
   void addLink(int a, int b);
-  void dumpTrees();
-  void buildTrees();
   Node find(int value);
   Node find(int value, vector<Node>& nodePath);
 
