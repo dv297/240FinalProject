@@ -1,7 +1,7 @@
 #include "UnionFind.h"
 
 /********************************************************************
- * Class for
+ * Main class for doing the union-find algorithm.
  *
  * Authors/copyright: Duncan Buell. All rights reserved.
  * Modifed by: Daniel Vu, Collin Haines, Kevin Silver, Julio Diaz
@@ -38,16 +38,17 @@ UnionFind::~UnionFind()
  * Function to add links to the union-find algorithm.
  *
  * Parameters:
- *   a - 
- *   b -
+ *   a - first number within the link being added
+ *   b - second number within the link being added
  *
  * Returns:
  *   none
+ *
  **/
 void UnionFind::addLink(int a, int b)
 {
-  int larger; // Holds the larger value, originally whatever
-  int smaller;  // Holds the smaller value, originally which
+  int larger; // Holds the larger value
+  int smaller;  // Holds the smaller value
   
   Node parentNode;
   Node currentNode;
@@ -76,36 +77,32 @@ void UnionFind::addLink(int a, int b)
   Node largerNode = nodes[larger];
   if(largerNode.getCurrentValue() == DUMMYX)
   {
-    nodes[larger].setCurrentValue(larger);  // Maybe this is what causes the 4-16-14 inf loop
-    nodes[larger].setParentValue(smaller); // We changed this
+    nodes[larger].setCurrentValue(larger);
+    nodes[larger].setParentValue(smaller);
   }
   
   parentNode = this->find(larger);
   currentNode = this->find(smaller);
-
-  //links.push_back(  std::make_pair(rootOfSmaller.getCurrentValue(), smallerNode.getCurrentValue())  );
   
   // Basically saying if we have hit root = root
   if(parentNode.equals(currentNode))
   {
     Node tempNode;
-    tempNode.setCurrentValue(larger); // 4-16-14 Look at this
+    tempNode.setCurrentValue(larger);
     tempNode.setParentValue(smaller);
-
-
+    
     Utils::logStream << this->dumpPaths(smaller, larger) << endl;
     Utils::logStream.flush();
   }
   else
   {
     // Trying to incorporate rootOfSmaller and smallerNode
-
     Node tempNode;
-    // 4-17-14, Matched set_Value to if statement above to print correctly.
-    tempNode.setCurrentValue(larger); // ACTUALLY LOOK AT THIS
+    tempNode.setCurrentValue(larger);
     tempNode.setParentValue(smaller);
     
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC";
+    Utils::logStream << tempNode.toString() << endl;
     Utils::logStream.flush();
     
     nodes[larger].setParentValue(smaller);
@@ -117,18 +114,37 @@ void UnionFind::addLink(int a, int b)
 }
 
 /********************************************************************
- * 
+ * Function to find a value within a node.
+ *
+ * Parameters:
+ *   value - integer to find within the node
+ *
+ * Returns:
+ *   the number found
+ *
  **/
 Node UnionFind::find(int value)
 {
   Node root;
   vector<Node> nodePath;
+  
   root = this->find(value, nodePath);
+  
   return root;
 }
 
+#warning - I'm lost as hell
 /********************************************************************
+ * Function to find again?
  * Makes the value you put in the root of a mini tree
+ *
+ * Parameters:
+ *   value - integer to find within the node
+ *   nodePath -
+ *
+ * Returns:
+ *   the current node
+ *
  **/
 Node UnionFind::find(int value, vector<Node>& nodePath)
 {
@@ -148,22 +164,29 @@ Node UnionFind::find(int value, vector<Node>& nodePath)
   return current;
 }
 
-
 /********************************************************************
+ * String function to dump the paths to the output file.
  * Run if rootOfSmaller.equals(thisValue), passed in smaller then larger
+ *
+ * Parameters:
+ *   parent -
+ *   current -
+ *
+ * Returns:
+ *   s - the string that displays the paths of the algorithm
+ *
  **/
 string UnionFind::dumpPaths(int parent, int current)
 {
   string s = "";
   
-  // Note: Buell marks down if two declarations are on one line.
   Node currentValue;
   Node parentValue;
-
+  
   vector<Node> pathParent;
   vector<Node> pathCurrent;
   
-  parentValue = this->find(parent, pathParent); // As of 4-16, this was backwards, changed 4-17
+  parentValue = this->find(parent, pathParent);
   currentValue = this->find(current, pathCurrent);
   
   vector<Node>::iterator itSmaller = pathParent.end();
@@ -175,41 +198,45 @@ string UnionFind::dumpPaths(int parent, int current)
     --itLarger;
   }
   
-  //Node topOfSmaller = *itSmaller;
-  //Node topOfLarger = *itLarger;
   Node tempNode;
   
   tempNode.setCurrentValue(current);
   tempNode.setParentValue(parent);
-
-
+  
+  
   if(pathCurrent[0].getParentValue() !=( tempNode.getParentValue() ))
   {
-     Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC" << tempNode.toString() << endl;
-     std::string pathOne;
-     std::string pathTwo;
-     pathOne = tempNode.toString() + this->toStringPath(pathParent, *itSmaller); // took out tempNode.toString() 4-17i
-     pathTwo = this->toStringPath(pathCurrent, *itLarger);
-     while(pathOne.substr( pathOne.size()-12, pathOne.size() ) == pathTwo.substr( pathTwo.size()-12, pathTwo.size()))
-     // 11 is the number of characters to represent one node.
-     {
-        pathOne = pathOne.substr(0, pathOne.size()-12);
-        pathTwo = pathTwo.substr(0, pathTwo.size()-12);
-     }
-     Utils::logStream << TAG << "PATH ONE " << pathOne << endl;
-     Utils::logStream << TAG << "PATH TWO " << pathTwo << endl << endl;
-     Utils::logStream.flush();
+    Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC";
+    Utils::logStream << tempNode.toString() << endl;
+    std::string pathOne;
+    std::string pathTwo;
+    pathOne = tempNode.toString() + this->toStringPath(pathParent, *itSmaller);
+    pathTwo = this->toStringPath(pathCurrent, *itLarger);
+    while(pathOne.substr( pathOne.size()-12, pathOne.size() ) ==
+          pathTwo.substr( pathTwo.size()-12, pathTwo.size()))
+      // 11 is the number of characters to represent one node.
+    {
+      pathOne = pathOne.substr(0, pathOne.size()-12);
+      pathTwo = pathTwo.substr(0, pathTwo.size()-12);
+    }
+    Utils::logStream << TAG << "PATH ONE " << pathOne << endl;
+    Utils::logStream << TAG << "PATH TWO " << pathTwo << endl << endl;
+    Utils::logStream.flush();
   }
   else
   {
-    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC" << tempNode.toString() << endl;
+    Utils::logStream << TAG << "BUILD TREE BY ADDING ARC";
+    Utils::logStream << tempNode.toString() << endl;
   }
   return s;
 }
 
-
 /********************************************************************
+ * Usual 'toString', in this case a formatted line with the data
+ * from the instance of the Node class.
  *
+ * Returns:
+ *   the usual 'string', in this case a <WHAT, IDK?>
  **/
 string UnionFind::toString()
 {
@@ -227,10 +254,19 @@ string UnionFind::toString()
 }
 
 /********************************************************************
- * Traverses through the vector<Node> path passed in from the front to the end
- * Returns the toString of each Node
+ * Derivative function of the usual 'toString' method but in this
+ * case it is dumping a formatted line of the path.
  *
- * We had to change it to be from front to back ,not back to front.
+ * This method traverses through the vector<Node> path passed in
+ * from the front to the end.
+ *
+ * Parameters:
+ *   path -
+ *   bottom -
+ *
+ * Returns:
+ *   the 'string' of each node
+ *
  **/
 string UnionFind::toStringPath(vector<Node> path, Node bottom)
 {
