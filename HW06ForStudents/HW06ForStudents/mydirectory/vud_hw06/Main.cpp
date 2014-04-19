@@ -23,15 +23,16 @@ int main(int argc, char *argv[])
 
   UnionFind unionFind;
 
-
   Utils::CheckArgs(3, argc, argv, "infilename outfilename logfilename");
   inFileName = (string) argv[1];
   outFileName = (string) argv[2];
   logFileName = (string) argv[3];
 
+  // open the output file and log file
   Utils::FileOpen(outStream, outFileName);
   Utils::LogFileOpen(logFileName);
 
+  // announce our presence and start the timer
   timeCallOutput = Utils::timecall("beginning");
   Utils::logStream << timeCallOutput;
   Utils::logStream << TAG << "Beginning execution" << endl;
@@ -41,6 +42,7 @@ int main(int argc, char *argv[])
   Utils::logStream << TAG << "outfile '" << outFileName << "'" << endl;
   Utils::logStream << TAG << "logfile '" << logFileName << "'" << endl;
 
+#warning - Possible debugging/deletion
 /*
   srand(1);
   int count = 20;
@@ -60,6 +62,7 @@ int main(int argc, char *argv[])
   exit(1);
 */
 
+  // open the input file and do the real work
   inStream.openFile(inFileName);
   int numberOfArcs = inStream.nextInt();
 
@@ -68,12 +71,6 @@ int main(int argc, char *argv[])
     int a = inStream.nextInt();
     int b = inStream.nextInt();
 
-    /****************************************************************
-     * 4-7-14 
-     *  - It appears that unionFind.addLink(a,b) already handles making the
-     *    the first parameter the bigger one.
-     * LOOK AT THIS
-    **/
     if(a < b)
       unionFind.addLink(a, b);
     else
@@ -83,12 +80,14 @@ int main(int argc, char *argv[])
   outStream << unionFind.toString() << endl;
   outStream.flush();
   
+#warning - Possible removal
   unionFind.buildTrees();
   // Next two lines are commented out to match zzlog3.txt
   //Utils::logStream << unionFind.toString() << endl;
   //Utils::logStream.flush();
 
 
+  // let the world know we're done, close files, stop timer, finish
   timeCallOutput = Utils::timecall("ending");
   Utils::logStream << timeCallOutput;
   Utils::logStream << TAG << "Ending execution" << endl;
