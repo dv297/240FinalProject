@@ -81,9 +81,8 @@ void UnionFind::addLink(int a, int b)
     nodes[larger].setParentValue(smaller);
   }
   
-  #warning WE SHOULD LOOK AT THIS, April 21
-  parentNode = this->find(larger);
-  currentNode = this->find(smaller);
+  parentNode = this->find(smaller);
+  currentNode = this->find(larger);
   
   // If parent == current, then we have hit the top of the tree
   if(parentNode.equals(currentNode))
