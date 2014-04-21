@@ -52,7 +52,7 @@ void UnionFind::addLink(int a, int b)
   
   Node parentNode;
   Node currentNode;
-  
+  // Ensures that the smaller value is used as the parent node 
   if(a <= b)
   {
     smaller = a;
@@ -81,10 +81,11 @@ void UnionFind::addLink(int a, int b)
     nodes[larger].setParentValue(smaller);
   }
   
+  #warning WE SHOULD LOOK AT THIS, April 21
   parentNode = this->find(larger);
   currentNode = this->find(smaller);
   
-  // Basically saying if we have hit root = root
+  // If parent == current, then we have hit the top of the tree
   if(parentNode.equals(currentNode))
   {
     Node tempNode;
@@ -94,9 +95,9 @@ void UnionFind::addLink(int a, int b)
     Utils::logStream << this->dumpPaths(smaller, larger) << endl;
     Utils::logStream.flush();
   }
+  // If we are not at the top of the tree
   else
   {
-    // Trying to incorporate rootOfSmaller and smallerNode
     Node tempNode;
     tempNode.setCurrentValue(larger);
     tempNode.setParentValue(smaller);
@@ -105,6 +106,7 @@ void UnionFind::addLink(int a, int b)
     Utils::logStream << tempNode.toString() << endl;
     Utils::logStream.flush();
     
+    // Connects the current node to the tree
     nodes[larger].setParentValue(smaller);
   }
   
@@ -114,15 +116,29 @@ void UnionFind::addLink(int a, int b)
 }
 
 /********************************************************************
- * Function to find a value within a node.
+ * Function to find a node with a certain value in the tree. 
+ * A vector of Nodes is created called nodePath.
+ *
+ * If the current node's parent does not have the same value
+ * as the current node, a condition that implies one is located
+ * at the top of the tree, then nodePath will push_back the current
+ * node, move to the parent node, and repeat this 
+ * until this condition is met. 
+ *
+ * This method is a container function for find(int, vector<Node>)
+ * method. It instantiates the vector that will hold all of the 
+ * parent nodes of a particular node.
  *
  * Parameters:
- *   value - integer to find within the node
+ *   value - integer value of the node desired
  *
  * Returns:
- *   the number found
+ *   The Node found
+ *   If no Node is found, then a Node with 
+ *   dummy currentValue and dummy parentValue
+ *   is returned.
  *
- **/
+**/ 
 Node UnionFind::find(int value)
 {
   Node root;
@@ -133,18 +149,31 @@ Node UnionFind::find(int value)
   return root;
 }
 
-#warning - I'm lost as hell
 /********************************************************************
- * Function to find again?
  * Makes the value you put in the root of a mini tree
  *
+ * If the current node's parent does not have the same value
+ * as the current node, a condition that implies one is located
+ * at the top of the tree, then nodePath will push_back the current
+ * node, move to the parent node, and repeat this 
+ * until this condition is met. 
+ *
+ * This method is a container function for find(int, vector<Node>)
+ *
  * Parameters:
- *   value - integer to find within the node
- *   nodePath -
+ *   value - integer value of the node desired
+ *   nodePath - A vector that contains the current node
+ *              and all of its parent nodes.
  *
  * Returns:
- *   the current node
- *
+ *   The Node found
+ *   if the desired node does not exist, then a node with
+ *   dummy currentValue and dummy parentValue
+ *   is returned.
+ * 
+ * Modifies:
+ *   nodePath - the vector will get all the nodes connected
+ *              inserted into it.
  **/
 Node UnionFind::find(int value, vector<Node>& nodePath)
 {
@@ -165,7 +194,7 @@ Node UnionFind::find(int value, vector<Node>& nodePath)
 }
 
 /********************************************************************
- * String function to dump the paths to the output file.
+ * This function 
  * Run if rootOfSmaller.equals(thisValue), passed in smaller then larger
  *
  * Parameters:
@@ -174,7 +203,6 @@ Node UnionFind::find(int value, vector<Node>& nodePath)
  *
  * Returns:
  *   s - the string that displays the paths of the algorithm
- *
  **/
 string UnionFind::dumpPaths(int parent, int current)
 {
@@ -204,7 +232,7 @@ string UnionFind::dumpPaths(int parent, int current)
   tempNode.setParentValue(parent);
   
   
-  if(pathCurrent[0].getParentValue() !=( tempNode.getParentValue() ))
+  if(pathCurrent[0].getParentValue() != ( tempNode.getParentValue() ))
   {
     Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC";
     Utils::logStream << tempNode.toString() << endl;
@@ -212,13 +240,17 @@ string UnionFind::dumpPaths(int parent, int current)
     std::string pathTwo;
     pathOne = tempNode.toString() + this->toStringPath(pathParent, *itSmaller);
     pathTwo = this->toStringPath(pathCurrent, *itLarger);
-    while(pathOne.substr( pathOne.size()-12, pathOne.size() ) ==
-          pathTwo.substr( pathTwo.size()-12, pathTwo.size()))
-      // 11 is the number of characters to represent one node.
+    // This snippet fulfills the extra credit requirement
+    // If the two paths contain the same nodes,
+    // those nodes are cut from the string
+    // so only unique paths are output
+    while(pathOne.substr( pathOne.find_last_of("\(") , pathOne.size() ) ==
+          pathTwo.substr( pathTwo.find_last_of("\(") , pathTwo.size()  ) )
     {
       pathOne = pathOne.substr(0, pathOne.size()-12);
       pathTwo = pathTwo.substr(0, pathTwo.size()-12);
     }
+
     Utils::logStream << TAG << "PATH ONE " << pathOne << endl;
     Utils::logStream << TAG << "PATH TWO " << pathTwo << endl << endl;
     Utils::logStream.flush();
