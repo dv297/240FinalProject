@@ -1,14 +1,14 @@
-Homework 6 - CSCE 240 - Version Alpha
+Homework 6 - CSCE 240 - Version 1.0
 Last Updated: 16 April 2014
 Submission Date: 24 April 2014
 Authors: Daniel Vu, Collin Haines, Kevin Silver, Julio Diaz
 
 Getting Started
 
-    Mac OSX or Linux only:
+    Mac OS X or Linux only:
 
-    1. Open up the application Terminal.
-    2. Navigate to where you're reading this README.txt file. (i.e. 'Downloads/', '~/')
+    1. Open up Terminal.
+    2. Navigate to where you're reading this README.txt file. (e.g. 'Downloads/', '~/')
     3. Compile all .cpp and .h files with:
     
        make
