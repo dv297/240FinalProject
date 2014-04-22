@@ -115,17 +115,6 @@ bool Node::equals(Node that)
 } // bool Node::equals(Node that)
 
 /********************************************************************
- * Function to determine if we are at the top of the tree or not.
- *
- * Returns:
- *   the equality comparision of the 'parentValue' and 'currentValue'
- **/
-bool Node::atTop()
-{
-  return (this->parentValue == this->currentValue);
-} // bool Node::atTop()
-
-/********************************************************************
  * Usual 'toString', in this case a formatted line with the data
  * from the instance of this class.
  *

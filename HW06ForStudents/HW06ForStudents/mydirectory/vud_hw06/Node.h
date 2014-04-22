@@ -39,7 +39,6 @@ public:
   friend ostream& operator <<(ostream& outputStream, const Node& node);
 
   bool equals(Node that);
-  bool atTop();
 
   string toString() const;
 

@@ -50,15 +50,9 @@ int main(int argc, char *argv[])
   {
     int a = inStream.nextInt();
     int b = inStream.nextInt();
-
-    if(a < b)
-    {
-      unionFind.addLink(a, b);
-    }
-    else
-    {
-      unionFind.addLink(b, a);
-    }
+    // 4-21-14 Removed if statements
+    // Variable distribution handled inside method
+    unionFind.addLink(a, b);
   }
 
   outStream << unionFind.toString() << endl;

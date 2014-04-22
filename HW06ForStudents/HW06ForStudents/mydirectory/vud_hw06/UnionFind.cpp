@@ -230,7 +230,7 @@ string UnionFind::dumpPaths(int parent, int current)
   tempNode.setCurrentValue(current);
   tempNode.setParentValue(parent);
   
-  
+  // If we are not at the top of the tree
   if(pathCurrent[0].getParentValue() != ( tempNode.getParentValue() ))
   {
     Utils::logStream << TAG << "FOUNDCYCLE IN ADDING ARC";
@@ -246,8 +246,8 @@ string UnionFind::dumpPaths(int parent, int current)
     while(pathOne.substr( pathOne.find_last_of("\(") , pathOne.size() ) ==
           pathTwo.substr( pathTwo.find_last_of("\(") , pathTwo.size()  ) )
     {
-      pathOne = pathOne.substr(0, pathOne.size()-12);
-      pathTwo = pathTwo.substr(0, pathTwo.size()-12);
+      pathOne = pathOne.substr(0, pathOne.find_last_of("\("));
+      pathTwo = pathTwo.substr(0, pathTwo.find_last_of("\("));
     }
 
     Utils::logStream << TAG << "PATH ONE " << pathOne << endl;
@@ -267,7 +267,8 @@ string UnionFind::dumpPaths(int parent, int current)
  * from the instance of the Node class.
  *
  * Returns:
- *   the usual 'string', in this case a <WHAT, IDK?>
+ *   A string representation of the current state of the tree.
+i
  **/
 string UnionFind::toString()
 {
