@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
   {
     int a = inStream.nextInt();
     int b = inStream.nextInt();
-    // 4-21-14 Removed if statements
     // Variable distribution handled inside method
     unionFind.addLink(a, b);
   }

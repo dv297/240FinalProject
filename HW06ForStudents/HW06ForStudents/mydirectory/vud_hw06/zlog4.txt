@@ -1,6 +1,6 @@
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Apr 19 16:36:58 2014
+TIME CPU percent    0.00   0.00                    Wed Apr 23 22:14:22 2014
 TIME beginning             0.00 u         0.00 s   Res:      585728
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
@@ -11,17 +11,20 @@ Main: infile 'zin4.txt'
 Main: outfile 'zout4.txt'
 Main: logfile 'zlog4.txt'
 UnionFind: BUILD TREE BY ADDING ARC(  2 ->   1)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  4 ->   1)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
 (  4 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  5 ->   1)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
@@ -29,6 +32,7 @@ UnionFind:
 (  5 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  3 ->   2)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
@@ -37,6 +41,7 @@ UnionFind:
 (  5 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  6 ->   2)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
@@ -46,8 +51,8 @@ UnionFind:
 (  6 ->   2)(  2 ->   1)(  1 ->   1)
 
 UnionFind: FOUNDCYCLE IN ADDING ARC(  4 ->   3)
-UnionFind: PATH ONE (  4 ->   3)(  3 ->   2)(  2 ->   1)(  1 ->   1)
-UnionFind: PATH TWO (  4 ->   1)(  1 ->   1)
+UnionFind: PATH ONE (  4 ->   3)(  3 ->   2)(  2 ->   1)
+UnionFind: PATH TWO (  4 ->   1)
 
 
 UnionFind: 
@@ -59,6 +64,7 @@ UnionFind:
 (  6 ->   2)(  2 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  7 ->   3)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
@@ -69,6 +75,7 @@ UnionFind:
 (  7 ->   3)(  3 ->   2)(  2 ->   1)(  1 ->   1)
 
 UnionFind: BUILD TREE BY ADDING ARC(  8 ->   4)
+
 UnionFind: 
 (  1 ->   1)
 (  2 ->   1)(  1 ->   1)
@@ -80,7 +87,7 @@ UnionFind:
 (  8 ->   4)(  4 ->   1)(  1 ->   1)
 
 UnionFind: FOUNDCYCLE IN ADDING ARC(  6 ->   5)
-UnionFind: PATH ONE (  6 ->   5)(  5 ->   1)(  1 ->   1)
+UnionFind: PATH ONE (  6 ->   5)(  5 ->   1)
 UnionFind: PATH TWO (  6 ->   2)(  2 ->   1)(  1 ->   1)
 
 
@@ -95,8 +102,8 @@ UnionFind:
 (  8 ->   4)(  4 ->   1)(  1 ->   1)
 
 UnionFind: FOUNDCYCLE IN ADDING ARC(  8 ->   5)
-UnionFind: PATH ONE (  8 ->   5)(  5 ->   1)(  1 ->   1)
-UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH ONE (  8 ->   5)(  5 ->   1)
+UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)
 
 
 UnionFind: 
@@ -110,8 +117,8 @@ UnionFind:
 (  8 ->   4)(  4 ->   1)(  1 ->   1)
 
 UnionFind: FOUNDCYCLE IN ADDING ARC(  7 ->   6)
-UnionFind: PATH ONE (  7 ->   6)(  6 ->   2)(  2 ->   1)(  1 ->   1)
-UnionFind: PATH TWO (  7 ->   3)(  3 ->   2)(  2 ->   1)(  1 ->   1)
+UnionFind: PATH ONE (  7 ->   6)(  6 ->   2)
+UnionFind: PATH TWO (  7 ->   3)(  3 ->   2)
 
 
 UnionFind: 
@@ -125,8 +132,8 @@ UnionFind:
 (  8 ->   4)(  4 ->   1)(  1 ->   1)
 
 UnionFind: FOUNDCYCLE IN ADDING ARC(  8 ->   7)
-UnionFind: PATH ONE (  8 ->   7)(  7 ->   3)(  3 ->   2)(  2 ->   1)(  1 ->   1)
-UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)(  1 ->   1)
+UnionFind: PATH ONE (  8 ->   7)(  7 ->   3)(  3 ->   2)(  2 ->   1)
+UnionFind: PATH TWO (  8 ->   4)(  4 ->   1)
 
 
 UnionFind: 
@@ -141,8 +148,8 @@ UnionFind:
 
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Sat Apr 19 16:36:58 2014
-TIME ending                0.00 u         0.00 s   Res:      634880
+TIME CPU percent    0.00   0.00                    Wed Apr 23 22:14:22 2014
+TIME ending                0.00 u         0.00 s   Res:      667648
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
